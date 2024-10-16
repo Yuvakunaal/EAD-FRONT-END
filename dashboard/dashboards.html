@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="../layout.css">
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="../home/home.html">
+                        <span class="icon">
+                            <img src="/website_logo.ico" class="custom-icon" height="40px" width="40px">
+                        </span>
+                        <span class="title">EventSpark</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../home/home.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../types/types.html">
+                        <span class="icon">
+                            <ion-icon name="keypad-outline"></ion-icon>
+                        </span>
+                        <span class="title">Types</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../events/events.html">
+                        <span class="icon">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </span>
+                        <span class="title">Events</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../dashboard/dashboards.html">
+                        <span class="icon">
+                            <ion-icon name="cellular-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../help/help.html">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../login/login.html" onclick="return confirmSignOut();">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>                    
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <div class="user" onclick="showProfile()">
+                    <img src="https://thumbs.dreamstime.com/b/man-profile-cartoon-smiling-vector-illustration-graphic-design-135443492.jpg" alt="">
+                </div>
+            </div>
+            <div class="dashboard-container">
+                <div class="card">
+                    <h3 class="card-heading">As<br> Admin</h3>
+                    <p class="card-body">12</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-heading">As<br> Organizer</h3>
+                    <p class="card-body">11</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-heading">As<br> Participant</h3>
+                    <p class="card-body">20</p>
+                </div>
+            </div>
+            <!-- Admin Section -->
+<h3>&nbsp;&nbsp;&nbsp;Events Conducted as Admin</h3>
+<div class="info-table-container">
+    <table class="info-table">
+        <thead>
+            <tr>
+                <th>Event Name</th>
+                <th>Date</th>
+                <th>Registered Participants</th>
+                <th>View Registrants</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Annual Conference</td>
+                <td>2024-01-15</td>
+                <td>50</td>
+                <td><a href="../dashboardAdminTable/whoRegistered.html">View Registrants</a></td>
+            </tr>
+            <tr>
+                <td>Web Development Workshop</td>
+                <td>2024-02-20</td>
+                <td>30</td>
+                <td><a href="../dashboardAdminTable/whoRegistered.html">View Registrants</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Organizer Section -->
+<h3>&nbsp;&nbsp;&nbsp;Events Organized</h3>
+<div class="info-table-container">
+    <table class="info-table">
+        <thead>
+            <tr>
+                <th>Event Name</th>
+                <th>Date</th>
+                <th>Admin Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Networking Event</td>
+                <td>2024-03-05</td>
+                <td><a href="../profileView/profileView.html">Admin 1</a></td>
+            </tr>
+            <tr>
+                <td>Tech Conference</td>
+                <td>2024-04-12</td>
+                <td><a href="../profileView/profileView.html">Admin 2</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Participant Section -->
+<h3>&nbsp;&nbsp;&nbsp;Participated Events</h3>
+<div class="info-table-container">
+    <table class="info-table">
+        <thead>
+            <tr>
+                <th>Event Name</th>
+                <th>Date</th>
+                <th>Admin Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Annual Conference</td>
+                <td>2024-01-15</td>
+                <td><a href="../profileView/profileView.html">Admin 1</a></td>
+            </tr>
+            <tr>
+                <td>Web Development Workshop</td>
+                <td>2024-02-20</td>
+                <td><a href="../profileView/profileView.html">Admin 2</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="../script.js"></script>
+    <script src="dashboard.js"></script>
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

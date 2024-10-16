@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="../layout.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="../home/home.html">
+                        <span class="icon">
+                            <img src="/website_logo.ico" class="custom-icon" height="40px" width="40px">
+                        </span>
+                        <span class="title">EventSpark</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../home/home.html">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../types/types.html">
+                        <span class="icon">
+                            <ion-icon name="keypad-outline"></ion-icon>
+                        </span>
+                        <span class="title">Types</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../events/events.html">
+                        <span class="icon">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </span>
+                        <span class="title">Events</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../dashboard/dashboards.html">
+                        <span class="icon">
+                            <ion-icon name="cellular-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../help/help.html">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="../login/login.html" onclick="return confirmSignOut();">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Sign Out</span>
+                    </a>                    
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user"  onclick="showProfile()">
+                    <img src="https://thumbs.dreamstime.com/b/man-profile-cartoon-smiling-vector-illustration-graphic-design-135443492.jpg" alt="">
+                </div>
+            </div>
+            <div class="btn-filter">
+                <div class="createBtn">
+                    <a href="../conductEvent/conduct.html">
+                        <button style="--clr:#39FF14"><span>Conduct</span><i></i></button>
+                    </a>
+                </div>
+                <div>
+                    <details class="dropdown">
+                        <summary role="button">
+                          <a class="button">Filter &#8658;</a>
+                        </summary>
+                        <ul>
+                          <li><a href="#">You as admin</a></li>
+                          <li><a href="#">You as organizer</a></li>
+                          <li><a href="#">You as participant</a></li>
+                          <li><a href="#">A - Z</a></li>
+                          <li><a href="#">Z - A</a></li>
+                      </ul>
+                    </details>
+                    
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card-container">
+                    <div class="top-container">
+                        <img class="hero-image" src="https://i.postimg.cc/NfR2yhNs/image-equilibrium.jpg" alt="Spinning glass cube"/>
+                    </div>
+                    <div class="bottom-container">
+                        <div class="titlename">
+                            TechCharades
+                        </div>
+                        <div class="host">
+                            <p class="col1 hosting">Host</p>
+                            <a class="col2 host-name" href="../profileView/profileView.html">Shivaprasad</a>
+                        </div>
+                        <div class="domain">
+                            <p class="col1 domaining">Type</p>
+                            <p class="col2 domain-name">Webinar</p>
+                        </div>
+                        <div class="date">
+                            <p class="col1 date-heading">Date</p>
+                            <p class="col2 date-val">01-10-2025</p>
+                        </div>
+                        <div class="time">
+                            <p class="col1 time-heading">Time</p>
+                            <p class="col2 time-val">11:00AM - 2:00PM</p>
+                        </div>
+                        <div class="more">
+                            <a class="more-details" href="../moredetails/moreDetails.html">
+                                <button class="more-but">More Details</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2nd -->
+                <div class="card-container">
+                    <div class="top-container">
+                        <img class="hero-image" src="https://i.postimg.cc/NfR2yhNs/image-equilibrium.jpg" alt="Spinning glass cube"/>
+                    </div>
+                    <div class="bottom-container">
+                        <div class="titlename">
+                            TechCharades
+                        </div>
+                        <div class="host">
+                            <p class="col1 hosting">Host</p>
+                            <a class="col2 host-name" href="../profileView/profileView.html">Shivaprasad</a>
+                        </div>
+                        <div class="domain">
+                            <p class="col1 domaining">Type</p>
+                            <p class="col2 domain-name">Webinar</p>
+                        </div>
+                        <div class="date">
+                            <p class="col1 date-heading">Date</p>
+                            <p class="col2 date-val">01-10-2025</p>
+                        </div>
+                        <div class="time">
+                            <p class="col1 time-heading">Time</p>
+                            <p class="col2 time-val">11:00AM - 2:00PM</p>
+                        </div>
+                        <div class="more">
+                            <a class="more-details" href="../moredetails/moreDetails.html">
+                                <button class="more-but">More Details</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <!-- 3rd -->
+                <div class="card-container">
+                    <div class="top-container">
+                        <img class="hero-image" src="https://i.postimg.cc/NfR2yhNs/image-equilibrium.jpg" alt="Spinning glass cube"/>
+                    </div>
+                    <div class="bottom-container">
+                        <div class="titlename">
+                            TechCharades
+                        </div>
+                        <div class="host">
+                            <p class="col1 hosting">Host</p>
+                            <a class="col2 host-name" href="../profileView/profileView.html">Shivaprasad</a>
+                        </div>
+                        <div class="domain">
+                            <p class="col1 domaining">Type</p>
+                            <p class="col2 domain-name">Webinar</p>
+                        </div>
+                        <div class="date">
+                            <p class="col1 date-heading">Date</p>
+                            <p class="col2 date-val">01-10-2025</p>
+                        </div>
+                        <div class="time">
+                            <p class="col1 time-heading">Time</p>
+                            <p class="col2 time-val">11:00AM - 2:00PM</p>
+                        </div>
+                        <div class="more">
+                            <a class="more-details" href="../moredetails/moreDetails.html">
+                                <button class="more-but">More Details</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4th -->
+                <div class="card-container">
+                    <div class="top-container">
+                        <img class="hero-image" src="https://i.postimg.cc/NfR2yhNs/image-equilibrium.jpg" alt="Spinning glass cube"/>
+                    </div>
+                    <div class="bottom-container">
+                        <div class="titlename">
+                            TechCharades
+                        </div>
+                        <div class="host">
+                            <p class="col1 hosting">Host</p>
+                            <a class="col2 host-name" href="../profileView/profileView.html">Shivaprasad</a>
+                        </div>
+                        <div class="domain">
+                            <p class="col1 domaining">Type</p>
+                            <p class="col2 domain-name">Webinar</p>
+                        </div>
+                        <div class="date">
+                            <p class="col1 date-heading">Date</p>
+                            <p class="col2 date-val">01-10-2025</p>
+                        </div>
+                        <div class="time">
+                            <p class="col1 time-heading">Time</p>
+                            <p class="col2 time-val">11:00AM - 2:00PM</p>
+                        </div>
+                        <div class="more">
+                            <a class="more-details" href="../moredetails/moreDetails.html">
+                                <button class="more-but">More Details</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5th -->
+                <div class="card-container">
+                    <div class="top-container">
+                        <img class="hero-image" src="https://i.postimg.cc/NfR2yhNs/image-equilibrium.jpg" alt="Spinning glass cube"/>
+                    </div>
+                    <div class="bottom-container">
+                        <div class="titlename">
+                            TechCharades
+                        </div>
+                        <div class="host">
+                            <p class="col1 hosting">Host</p>
+                            <a class="col2 host-name" href="../profileView/profileView.html">Shivaprasad</a>
+                        </div>
+                        <div class="domain">
+                            <p class="col1 domaining">Type</p>
+                            <p class="col2 domain-name">Webinar</p>
+                        </div>
+                        <div class="date">
+                            <p class="col1 date-heading">Date</p>
+                            <p class="col2 date-val">01-10-2025</p>
+                        </div>
+                        <div class="time">
+                            <p class="col1 time-heading">Time</p>
+                            <p class="col2 time-val">11:00AM - 2:00PM</p>
+                        </div>
+                        <div class="more">
+                            <a class="more-details" href="../moredetails/moreDetails.html">
+                                <button class="more-but">More Details</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- =========== Scripts =========  -->
+    <script src="../script.js"></script>
+    <script src="events.js"></script>
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

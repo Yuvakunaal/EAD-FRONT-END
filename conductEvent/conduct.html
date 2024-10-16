@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conduct.css">
+    <title>Create Event</title>
+</head>
+<body>
+    <div class="form-container">
+        <form class="event-form" action="../events/events.html">
+            <a href="../events/events.html">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/long-arrow-left.png" alt="long-arrow-left"/>
+            </a>
+            <h1 align="center">Fill the details</h1>
+            <br>
+            <!-- Poster Upload -->
+            <label for="poster">Event Poster:</label>
+            <input type="file" id="poster" name="poster" accept="image/*" required>
+            <br><br>
+
+            <!-- Event Type Dropdown -->
+            <label for="event-type">Type:</label>
+            <select id="event-type" name="event-type" required>
+                <option value="webinar">Webinar</option>
+                <option value="conference">Conference</option>
+                <option value="workshop">Workshop</option>
+                <option value="network-event">Network Event</option>
+            </select>
+            <br><br>
+
+            <!-- Date Input -->
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+
+            <!-- Time Input -->
+            <label for="time">Time:</label>
+            <input type="time" id="start-time" name="start-time" required> <p align="center">To</p>
+            <input type="time" id="end-time" name="end-time" required>
+            <br><br>
+
+            <!-- Description Textarea -->
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="5" cols="40" placeholder="Describe the event..." required></textarea>
+            <br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
